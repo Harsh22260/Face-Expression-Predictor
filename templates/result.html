@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mood Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Predicted Mood: {{ prediction }}</h2>
+        <img src="{{ url_for('static', filename='uploads/' + image) }}" alt="Uploaded Image" width="250">
+        <br><br>
+        <a href="/">Try another image</a>
+    </div>
+</body>
+</html>
